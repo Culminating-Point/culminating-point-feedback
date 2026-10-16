@@ -1,0 +1,54 @@
+name: Bug
+description: Something broke, looks wrong or behaves oddly
+labels: ["bug", "triage"]
+body:
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where do you play?
+      options:
+        - Browser
+        - Installed app (from the browser)
+        - Desktop app
+        - Other (describe below)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Game version
+      description: Shown on the title screen
+      placeholder: "0.42.1"
+  - type: dropdown
+    id: scenario
+    attributes:
+      label: Which scenario?
+      options:
+        - North Africa
+        - Italy
+        - The Two Banks
+        - Other / not in a game
+  - type: input
+    id: link
+    attributes:
+      label: Link to the game
+      description: The address bar holds the page's link. Paste it here and the maintainer reopens what you saw.
+  - type: textarea
+    id: did
+    attributes:
+      label: What did you do?
+    validations:
+      required: true
+  - type: textarea
+    id: got
+    attributes:
+      label: What happened?
+      description: A screenshot helps
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What were you expecting?
+    validations:
+      required: true

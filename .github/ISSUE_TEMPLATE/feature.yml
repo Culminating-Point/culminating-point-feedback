@@ -1,0 +1,17 @@
+name: Feature request
+description: Something that should work differently, or something missing
+labels: ["feature", "triage"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it matter?
+      description: One sentence of context helps with priority
+    validations:
+      required: true

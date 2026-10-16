@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Q&A and discussion
+    url: https://github.com/Culminating-Point/culminating-point-feedback/discussions
+    about: Ask questions, share how you play, or discuss ideas with the community
+  - name: General question (private)
+    url: mailto:hello@culminating-point.com
+    about: For questions you'd rather keep off the public tracker
+  - name: Privacy concern
+    url: mailto:privacy@culminating-point.com
+    about: For privacy-specific requests
+  - name: Security disclosure
+    url: mailto:security@culminating-point.com
+    about: Do NOT open a public issue for vulnerabilities. See SECURITY.md

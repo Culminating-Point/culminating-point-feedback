@@ -1,0 +1,27 @@
+name: Balance or history
+description: A unit, a map, a supply rule or an outcome that does not fit the war it models
+labels: ["balance", "triage"]
+body:
+  - type: dropdown
+    id: scenario
+    attributes:
+      label: Which scenario?
+      options:
+        - North Africa
+        - Italy
+        - The Two Banks
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What is off?
+      description: Unit strengths, a road or a port, depot reach, a battle's result, a side too strong or too weak
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: What do you base it on?
+      description: A book, an order of battle, a map. Your own reading of the war is fine too
